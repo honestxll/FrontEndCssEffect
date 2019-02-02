@@ -1,0 +1,81 @@
+.segment {
+  border-radius: 6px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+.review-item {
+  min-height: 200px;
+  position: relative;
+}
+.review-item-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: -1;
+}
+.bg-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(5px);
+  transform: scale(1.2);
+}
+.bg-blur:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(105, 105, 105, 0.1) 0%, #fff 85%);
+}
+.post-brand {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.post-brand-img {
+  position: absolute;
+  border-radius: 6px;
+  width: 130px;
+  height: 190px;
+  object-fit: cover;
+  top: -20px;
+  left: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+.content {
+  padding: 20px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+  justify-content: space-around;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none!important;
+  color: #ffffff;
+  transition: color 1s;
+}
+.title:hover {
+  color: #c1c1c1;
+}
+.post-container {
+  padding: 20px;
+}
+.post-content {
+  color: rgba(0, 0, 0, 0.6);
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
